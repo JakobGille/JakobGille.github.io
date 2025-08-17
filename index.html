@@ -10,46 +10,43 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            font-family: "Source Sans 3", sans-serif;
-            margin: 40px;
-            color: #333;
-            background-color: #fff;
-        }
-        header h1 {
-            font-family: "EB Garamond", serif;
-            font-size: 24px;
-            font-weight: normal;
-            margin: 0;
-        }
-        /* NEW: Makes the header link look like normal text */
-        header a {
-            text-decoration: none;
-            color: inherit;
-        }
-        nav {
-            text-align: center;
-            margin-top: 60px;
-            margin-bottom: 60px;
-        }
+        body { font-family: "Source Sans 3", sans-serif; margin: 40px; color: #333; background-color: #fff; }
+        header h1 { font-family: "EB Garamond", serif; font-size: 24px; font-weight: normal; margin: 0; }
+        header a { text-decoration: none; color: inherit; }
+        nav { text-align: center; margin-top: 60px; margin-bottom: 60px; }
         nav ul { list-style: none; padding: 0; margin: 0; display: inline-block; }
         nav ul li { display: inline; margin: 0 15px; }
         nav ul li a { text-decoration: none; color: #333; font-size: 18px; }
-        /* NEW: Hover effect for tabs */
-        nav ul li a:hover {
-            color: orange;
+        nav ul li a:hover { color: orange; }
+        nav ul li a.active { font-weight: bold; }
+        main { text-align: left; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+        main h2 { font-family: "EB Garamond", serif; font-size: 28px; font-weight: normal; margin-bottom: 40px; text-align: center; }
+
+        /* NEU: Styling für die News-Einträge */
+        .news-entry {
+            display: flex; /* Ordnet Bild und Text nebeneinander an */
+            align-items: flex-start; /* Oben ausrichten */
+            margin-bottom: 50px; /* Abstand zwischen den Einträgen */
+            border-bottom: 1px solid #eee; /* Leichte Trennlinie */
+            padding-bottom: 30px;
         }
-        /* NEW: Style for the currently selected tab */
-        nav ul li a.active {
-            font-weight: bold;
+        .news-entry img {
+            width: 200px; /* Feste Breite für das Bild */
+            margin-right: 30px; /* Abstand zwischen Bild und Text */
         }
-        main { text-align: center; }
-        main h2 {
+        .news-entry-text h3 {
             font-family: "EB Garamond", serif;
-            font-size: 28px;
-            font-weight: normal;
-            margin-bottom: 40px;
+            margin-top: 0;
+            margin-bottom: 10px;
         }
+        .news-entry-text p {
+            margin: 0;
+        }
+        .news-meta {
+            font-size: 0.9em;
+            color: #666;
+        }
+
     </style>
 </head>
 <body>
@@ -72,6 +69,18 @@
 
     <main>
         <h2>News</h2>
+
+        <div class="news-entry">
+            <img src="images/photo_2025-08-17_17-50-55.jpg" alt="Poster for Liquid Summer Lab">
+            <div class="news-entry-text">
+                <h3>Liquid Summer Lab at Sónar</h3>
+                <p class="news-meta">
+                    <strong>Datum:</strong> 17. - 23. August<br>
+                    <strong>Art:</strong> Workshop
+                </p>
+                <p>Weitere Details zum Event hier...</p>
+            </div>
+        </div>
         </main>
 
 </body>
