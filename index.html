@@ -8,50 +8,65 @@
         /* Grundlegende Stile für die Seite */
         body {
             font-family: sans-serif;
-            margin: 0;
-            display: flex; /* Haupt-Layout-Container */
+            margin: 40px; /* Abstand zum Rand des Browserfensters */
             color: #333;
+            background-color: #fff; /* Weisser Hintergrund */
         }
-        /* Linke Navigationsleiste */
-        nav {
-            width: 200px; /* Breite der Navigation */
-            padding: 40px;
-            border-right: 1px solid #eee; /* Dünne Trennlinie */
-            height: 100vh; /* Füllt die ganze Höhe des Bildschirms */
-        }
-        nav h1 {
+
+        /* Ihr Name oben links */
+        header h1 {
+            font-family: "Times New Roman", Times, serif; /* Elegante Standardschrift als Ersatz für den speziellen Font */
             font-size: 24px;
-            margin-top: 0;
+            font-weight: normal;
+            margin: 0;
         }
+
+        /* Horizontale Navigationsleiste */
+        nav {
+            text-align: center; /* Zentriert die Links */
+            margin-top: 60px; /* Abstand nach oben */
+            margin-bottom: 60px; /* Abstand nach unten */
+        }
+
         nav ul {
             list-style: none; /* Entfernt die Aufzählungspunkte */
             padding: 0;
             margin: 0;
+            display: inline-block; /* Erlaubt die Zentrierung der Liste */
         }
+
         nav ul li {
-            margin-bottom: 15px; /* Abstand zwischen den Links */
+            display: inline; /* Ordnet die Links nebeneinander an */
+            margin-left: 15px;
+            margin-right: 15px;
         }
+
         nav ul li a {
             text-decoration: none; /* Entfernt die Unterstreichung */
             color: #333;
             font-size: 18px;
         }
-        /* Hauptinhaltsbereich rechts */
+
+        /* Hauptinhaltsbereich */
         main {
-            padding: 40px;
-            flex-grow: 1; /* Füllt den restlichen verfügbaren Platz */
+            text-align: center; /* Zentriert auch den Inhaltstext */
         }
+
         main h2 {
-            margin-top: 0;
             font-size: 28px;
             font-weight: normal;
+            margin-bottom: 40px;
         }
+
     </style>
 </head>
 <body>
 
-    <nav>
+    <header>
         <h1>Jakob Gille</h1>
+    </header>
+
+    <nav>
         <ul>
             <li><a href="index.html">About</a></li>
             <li><a href="#">Publications</a></li>
