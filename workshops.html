@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+
     <style>
         body { font-family: "Source Sans 3", sans-serif; margin: 40px; color: #333; background-color: #fff; }
         header h1 { font-family: "EB Garamond", serif; font-size: 24px; font-weight: normal; margin: 0; }
@@ -27,34 +29,20 @@
             margin-bottom: 25px;
             border-bottom: 1px solid #eee;
         }
-        .workshop-entry h3 {
-            font-family: "EB Garamond", serif;
-            margin-bottom: 5px;
-        }
-        .workshop-entry p {
-            margin: 0;
-            color: #666;
-        }
+        .workshop-entry h3 { font-family: "EB Garamond", serif; margin-bottom: 5px; }
+        .workshop-entry p { margin: 0; color: #666; }
         
-        .image-gallery {
-            display: flex;
-            gap: 15px; /* Creates space between the images */
-            margin-top: 20px;
-        }
-        .image-gallery a {
-            display: block;
-        }
+        .image-gallery { display: flex; gap: 15px; margin-top: 20px; }
+        .image-gallery a { display: block; }
         .image-gallery img {
             width: 150px;
             height: 100px;
             object-fit: cover;
             border: 1px solid #ddd;
             transition: opacity 0.2s;
+            cursor: pointer;
         }
-        .image-gallery img:hover {
-            opacity: 0.7;
-        }
-
+        .image-gallery img:hover { opacity: 0.7; }
     </style>
 </head>
 <body>
@@ -82,71 +70,21 @@
             <h3>Ambisonics Workshop @ Liquid Summer Lab at Heymannbaude Bad Schandau</h3>
             <p>Date: August 2025</p>
             <div class="image-gallery">
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 1"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 2"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 3"></a>
+                <a href="https://via.placeholder.com/800x600.png?text=Image+1"><img src="https://via.placeholder.com/150x100" alt="Workshop image 1"></a>
+                <a href="https://via.placeholder.com/800x600.png?text=Image+2"><img src="https://via.placeholder.com/150x100" alt="Workshop image 2"></a>
+                <a href="https://via.placeholder.com/800x600.png?text=Image+3"><img src="https://via.placeholder.com/150x100" alt="Workshop image 3"></a>
             </div>
         </div>
 
-         <div class="workshop-entry">
-            <h3>Paper Presentation @ SMC Graz</h3>
-            <p>Date: June 2023</p>
-            <div class="image-gallery">
-                <a href="images/SMC.jpeg" target="_blank"><img src="Paper" alt="Paper Presentation"></a>
-                     </div>
-        </div>
-        
-        <div class="workshop-entry">
-            <h3>Ambisonics Workshop @ Summer School of SMC Graz</h3>
-            <p>Date: July 2025</p>
-            <div class="image-gallery">
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 1"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 2"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 3"></a>
-            </div>
-        </div>
-        
-        <div class="workshop-entry">
-            <h3>Ambisonics Workshop @ Ambisonics Summer School in Usti nad labem</h3>
-            <p>Date: July 2024</p>
-            <div class="image-gallery">
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 1"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 2"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 3"></a>
-            </div>
-        </div>
+        </main>
 
-        <div class="workshop-entry">
-            <h3>Ambisonics Lecture @ Ottosonics Festival in Ottensheim Linz</h3>
-            <p>Date: September 2023</p>
-            <div class="image-gallery">
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 1"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 2"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 3"></a>
-            </div>
-        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>
 
-        <div class="workshop-entry">
-            <h3>Ambisonics Lecture @ Cube IEM in Graz</h3>
-            <p>Date: June 2023</p>
-            <div class="image-gallery">
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 1"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 2"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 3"></a>
-            </div>
-        </div>
-
-             <div class="workshop-entry">
-            <h3>Lecture @ Next Generation Festival at ZKM Karlsruhe</h3>
-            <p>Date: June 2023</p>
-            <div class="image-gallery">
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 1"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 2"></a>
-                <a href="images/placeholder-large.png" target="_blank"><img src="https://via.placeholder.com/150x100" alt="Workshop image 3"></a>
-            </div>
-        </div>
-
-    </main>
+    <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.image-gallery');
+        });
+    </script>
 
 </body>
 </html>
