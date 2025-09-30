@@ -21,30 +21,35 @@
         nav ul li a.active { font-weight: bold; }
         main { text-align: left; max-width: 700px; margin: 0 auto; line-height: 1.6; }
         main h2 { font-family: "EB Garamond", serif; font-size: 28px; font-weight: normal; margin-bottom: 40px; text-align: center; }
+        main a { color: orange; text-decoration: none; }
+        main a:hover { text-decoration: underline; }
 
-        /* NEU: Styling für die News-Einträge */
-        .news-entry {
-            display: flex; /* Ordnet Bild und Text nebeneinander an */
-            align-items: flex-start; /* Oben ausrichten */
-            margin-bottom: 50px; /* Abstand zwischen den Einträgen */
-            border-bottom: 1px solid #eee; /* Leichte Trennlinie */
+        .news-entry, .news-entry-no-image {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
             padding-bottom: 30px;
         }
-        .news-entry img {
-            width: 200px; /* Feste Breite für das Bild */
-            margin-right: 30px; /* Abstand zwischen Bild und Text */
+        .news-entry {
+            display: flex;
+            align-items: flex-start;
         }
-        .news-entry-text h3 {
+        .news-entry img {
+            width: 150px; /* Smaller image for news */
+            margin-right: 25px;
+        }
+        .news-entry-text h3, .news-entry-no-image h3 {
             font-family: "EB Garamond", serif;
             margin-top: 0;
             margin-bottom: 10px;
+            font-size: 1.4em;
         }
-        .news-entry-text p {
+        .news-entry-text p, .news-entry-no-image p {
             margin: 0;
         }
         .news-meta {
             font-size: 0.9em;
             color: #666;
+            margin-top: 5px !important;
         }
 
     </style>
@@ -62,13 +67,31 @@
             <li><a href="compositions.html">Compositions</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="workshops.html">Workshops</a></li>
-            <!-- <li><a href="cv.html">CV</a></li> -->
+            <li><a href="cv.html">CV</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <main>
+        <h2>News</h2>
+
         <div class="news-entry">
+            <img src="https://via.placeholder.com/150x100" alt="Dummy image">
+            <div class="news-entry-text">
+                <h3>Finalist @ the S3DAPC Student 3D Audio Production Competition with Concerts at the Musikprotokolle Graz & Tonmeistertagung Düsseldorf</h3>
+                <p class="news-meta"><strong>Date:</strong> November 2025 | <strong>Type:</strong> Competition & Concert</p>
+            </div>
+        </div>
+
+        <div class="news-entry">
+            <img src="https://via.placeholder.com/150x100" alt="Dummy image">
+            <div class="news-entry-text">
+                <h3><a href="https://audiospace.soundingfuture.com/tracks/hymoiarbolo" target="_blank">hymoiarbolo</a> @ DEGEM Jahreskonzert Bremen</h3>
+                <p class="news-meta"><strong>Date:</strong> September 2025 | <strong>Type:</strong> Concert</p>
+            </div>
+        </div>
+        
+      <div class="news-entry">
             <img src="images/photo_2025-08-17_17-50-55.jpg" alt="Poster for Liquid Summer Lab">
             <div class="news-entry-text">
                 <h3>Liquid Summer Lab at Heymannbaude</h3>
@@ -81,8 +104,67 @@
                 </p>
                   <a href="https://www.heymannbaude.org/archiv.php?vid=170" target="_blank">More Infos here</a>.
             </div>
+         </div>
+        <div class="news-entry">
+            <img src="https://via.placeholder.com/150x100" alt="Dummy image">
+            <div class="news-entry-text">
+                <h3><a href="https://audiospace.soundingfuture.com/tracks/natura-morta" target="_blank">Natura Morta</a> @ SMC Concerts Graz</h3>
+                <p class="news-meta"><strong>Date:</strong> July 2025 | <strong>Type:</strong> Concert</p>
+            </div>
         </div>
-        </main>
+        
+        <div class="news-entry">
+            <img src="https://via.placeholder.com/150x100" alt="Dummy image">
+            <div class="news-entry-text">
+                <h3>La Carrozza @ Art Beats 2024 Bologna</h3>
+                <p class="news-meta"><strong>Date:</strong> November 2024 | <strong>Type:</strong> Installation</p>
+            </div>
+        </div>
+        
+        <div class="news-entry-no-image">
+            <h3><a href="https://audiospace.soundingfuture.com/tracks/la-porta-nel-dado" target="_blank">La porta nel dado</a> @ Spaceout: An Ambisonics Concert</h3>
+            <p class="news-meta"><strong>Date:</strong> October 2024 | <strong>Type:</strong> Concert</p>
+        </div>
+        
+        <div class="news-entry-no-image">
+            <h3><a href="https://audiospace.soundingfuture.com/tracks/natura-morta" target="_blank">Natura Morta</a> @ PAYSAGES Composés 2024</h3>
+            <p class="news-meta"><strong>Date:</strong> September 2024 | <strong>Type:</strong> Concert</p>
+        </div>
+        
+        <div class="news-entry-no-image">
+            <h3><a href="https://jakobgille.bandcamp.com/track/pendulum-binaural-version" target="_blank">Perspektiven von Venedig</a> @ The Sound of Anthropocene</h3>
+            <p class="news-meta"><strong>Date:</strong> June 2024 | <strong>Type:</strong> Concert</p>
+        </div>
+        
+        <div class="news-entry-no-image">
+            <h3><a href="https://audiospace.soundingfuture.com/tracks/la-porta-nel-dado" target="_blank">La porta nel dado</a> @ Main Festival Rome</h3>
+            <p class="news-meta"><strong>Date:</strong> June 2024 | <strong>Type:</strong> Concert</p>
+        </div>
+        
+        <div class="news-entry-no-image">
+            <h3><a href="https://audiospace.soundingfuture.com/tracks/la-porta-nel-dado" target="_blank">La porta nel dado</a> @ Spatial Audio Gathering Leicester</h3>
+            <p class="news-meta"><strong>Date:</strong> May 2024 | <strong>Type:</strong> Concert</p>
+        </div>
+        
+        <div class="news-entry-no-image">
+            <h3><a href="https://audiospace.soundingfuture.com/tracks/natura-morta" target="_blank">Natura Morta</a> @ 40.4 Atlas Festival Colorado</h3>
+            <p class="news-meta"><strong>Date:</strong> June 2024 | <strong>Type:</strong> Concert</p>
+        </div>
+        
+        <div class="news-entry">
+            <img src="https://via.placeholder.com/150x100" alt="Dummy image">
+            <div class="news-entry-text">
+                <h3><a href="https://audiospace.soundingfuture.com/tracks/la-porta-nel-dado" target="_blank">La porta nel dado</a> @ Sonic Saturday at Ars Electronica Linz</h3>
+                <p class="news-meta"><strong>Date:</strong> April 2024 | <strong>Type:</strong> Concert</p>
+            </div>
+        </div>
+        
+        <div class="news-entry-no-image">
+            <h3><a href="https://audiospace.soundingfuture.com/tracks/la-porta-nel-dado" target="_blank">La porta nel dado</a> @ Zenith Concert Tallin Music Week</h3>
+            <p class="news-meta"><strong>Date:</strong> April 2024 | <strong>Type:</strong> Concert</p>
+        </div>
+
+    </main>
 
 </body>
 </html>
