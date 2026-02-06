@@ -23,6 +23,24 @@
         nav ul li a.active { font-weight: bold; }
         main { text-align: left; max-width: 700px; margin: 0 auto; line-height: 1.6; }
         main h2 { font-family: "EB Garamond", serif; font-size: 28px; font-weight: normal; margin-bottom: 40px; text-align: center; }
+
+        .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Format */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
         
         .workshop-entry {
             padding-bottom: 25px;
@@ -116,10 +134,9 @@
         <div class="workshop-entry">
             <h3>Ambisonics Lecture @ Cube IEM in Graz</h3>
             <p>Date: June 2023</p>
-            <div class="image-gallery">
-            <a href="images/cube lecture.jpg"><img src="images/cube lecture.jpg" alt="Cube Lecture"></a>
-            </div>
-        </div>
+          <div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a6jtPDDnSBw?si=Oe9AUKTF06ebWPH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+</div>
 
         <!--<div class="workshop-entry">
             <h3>Lecture @ Next Generation Festival at ZKM Karlsruhe</h3>
